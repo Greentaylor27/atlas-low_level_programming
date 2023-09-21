@@ -15,7 +15,6 @@ int main(void)
 				if (i != j)
 				{
 					putchar(',');
-					putchar(' ');
 					putchar('O' + j);
 				}
 				putchar('\n');
