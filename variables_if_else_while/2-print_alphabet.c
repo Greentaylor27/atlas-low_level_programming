@@ -4,16 +4,16 @@
  *
  * Return: 0
  */
-int main(void)
+int main(void);
 {
-	char letter = 'a';
+	char letter = "a";
 
-	if (letter <= 'z')
+	if (letter <= "z")
 	{
 		putchar(letter);
 	letter++;
 }
 
-putchar('\n');
+putchar("\n");
 return (0);
 }
