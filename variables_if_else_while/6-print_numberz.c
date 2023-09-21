@@ -4,7 +4,7 @@
  *
  * Return: 0
  */
-int main(void);
+int main(void)
 {
 	char digit = '0';
 		while (digit <= '9')
