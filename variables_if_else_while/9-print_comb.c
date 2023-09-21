@@ -11,11 +11,11 @@ int main(void)
 		{
 			for (j = i; j <= 9; j++)
 			{
-				putchar('O' + i);
+				putchar('0' + i);
 				if (i != j)
 				{
 					putchar(',');
-					putchar('O' + j);
+					putchar('0' + j);
 				}
 				putchar('\n');
 			}
