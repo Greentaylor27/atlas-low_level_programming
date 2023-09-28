@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints the english alphabet from a-z.
+ * print_alphabet_x10 - prints the english alphabet from a-z.
  * Return: Nothing.
  */
 
 void print_alphabet_x10(void)
 {
 	char c;
+	int i;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (i = 0; c <= 10; i++)
 	{
-		int i = 1;
 
-		while (i <= 10)
+		while (c ='a'; c <= 'z'; c++)
 		{
 			_putchar(c);
 		}
