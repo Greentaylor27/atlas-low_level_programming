@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - prints lowercase alphabet using _putchar
- * Return: void
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
  */
 void print_alphabet(void) /*PRINTS LOWERCASE ALPHABET*/
 {
