@@ -5,7 +5,7 @@
  *
  * Return: void
  */
-void print_alphabet(void)//PRINTS LOWERCASE ALPHABET
+void print_alphabet(void) /*PRINTS LOWERCASE ALPHABET*/
 {
 	char c;
 
