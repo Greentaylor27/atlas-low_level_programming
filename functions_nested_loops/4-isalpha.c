@@ -8,7 +8,7 @@
  * return = 0 if false
  */
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	int c
 
