@@ -1,13 +1,15 @@
 #include "main.h"
+
 /**
- * main - prints a specific line
+ * main - prints lowercase alphabet using _putchar
  *
- * Return: 0
+ * Return: void
  */
 void print_alphabet(void)
 {
 	char c;
-	for (c = 'a'; c <= 'z'; c++)
+
+	for (c = 'a' ; c <= 'z' ; c++)
 	{
 		_putchar(c);
 	}
