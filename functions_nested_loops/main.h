@@ -1,4 +1,4 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN
+#define MAIN
 
 #endif
