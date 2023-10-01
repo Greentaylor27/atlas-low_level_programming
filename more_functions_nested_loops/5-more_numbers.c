@@ -9,13 +9,18 @@
  */
 void more_numbers(void)
 {
-	int i, x;
+	int i, x, y, a;
 
-	for (i = '0'; i <= 14; i++)
+	for (a = '0'; a <= 10; a++)
 	{
-		while (x <= 10)
+		for (i = 0; i <= 14; i++)
 		{
-			_putchar(i);
+			x = i / 10;
+			y = i % 10;
+			if (i > 9)
+				_putchar(x + '0');
+
+			_putchar(y + '0');
 		}
 		_putchar('\n');
 	}
