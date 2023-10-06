@@ -19,4 +19,5 @@ char *cap_string(char *x)
 			x[i] = x[i] - 32;
 		}
 	}
-	return (x)
+	return (x);
+}
