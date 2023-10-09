@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strspn - displays the length of a prefix substring
+ * _strspn - matches string prefix
  * @s: string
- * @accept: Bytes
- * Return: number of initial bytes from accept
+ * @accept: number of bytes
+ * Return: a number of initial bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -12,24 +12,26 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s != '\0')
 	{
-		char *acceptP = accept;
+		char *aP = accept;
 		char *sPtr = s;
+		int im = 0;
 
-		while (*acceptP != '\0' && *acceptP != *sPtr)
+		while (*aP != '\0')
 		{
-			acceptP++;
+			if (*aP == *sPtr)
+			{
+				im = 1;
+				break;
+			}
+			aP++;
 		}
 
-		if (*acceptP == *sPtr || *acceptP == '\0')
-		{
-			l++;
-		}
-
-		else
+		if (!im)
 		{
 			break;
 		}
 
+		l++;
 		s++;
 	}
 	return (l);
