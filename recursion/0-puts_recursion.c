@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * _puts_recursion - Writes out a string
@@ -7,14 +7,12 @@
  */
 void _puts_recursion(char *s)
 {
-	if (*s)
+	if (*s == '\0')
 	{
-		_putchar(1, s, 1);
-		_puts_recursion(s + 1);
+		_putchar("\n");
+		return;
 	}
 
-	else
-	{
-		_putchar(1, '\n', 1);
-	}
+	_putchar("%c", *s);
+	_puts_recursion(s + 1);
 }
