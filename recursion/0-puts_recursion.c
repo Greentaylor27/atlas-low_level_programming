@@ -7,8 +7,6 @@
  */
 void _puts_recursion(char *s)
 {
-	int i;
-
 	if (*s)
 	{
 		write (1, *s, 1);
