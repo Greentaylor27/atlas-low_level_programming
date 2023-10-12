@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ * _pow_recursion - does exponent mathmatically
+ * @x: base int
+ * @y: Power!!!
+ * Return: int
+ */
+int _pow_recursion(int x, int y)
+{
+	if (y != 0)
+	{
+		return (x * _pow_recursion(x, y - 1));
+	}
+	else
+		return (1);
+}
