@@ -1,18 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _puts_recursion - Writes out a string
+ * _puts_recursion - prints a string
  * @s: string
  * Return: void
  */
 void _puts_recursion(char *s)
 {
-	if (*s == '\0')
-	{
-		putchar("\n");
-		return;
-	}
+	int i;
 
-	putchar("%c", *s);
-	_puts_recursion(s + 1);
+	if (*s)
+	{
+		write (1, *s, 1);
+		_puts_recursion(s + 1);
+	}
 }
