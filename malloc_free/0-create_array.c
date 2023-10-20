@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 
 	if (a == NULL)
 	{
-		_putchar("Memory allocation failed.\n");
+		printf("Memory allocation failed.\n");
 		return (NULL);
 	}
 	for (unsigned int i = 0; i < size; i++)
