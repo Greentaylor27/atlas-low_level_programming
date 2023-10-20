@@ -9,13 +9,16 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *str;
-	unsigned int l;
+	char *a = (char *) malloc(size * sizeof(char));
 
-	str = malloc(sizeof(char) * size);
-	if (size == 0 || *str == '\0')
-		return ('\0');
-	for (l = 0; l < size; l++)
-		str[l] = c;
-	return (str);
+	if (a == NULL)
+	{
+		_putchar("Memory allocation failed.\n");
+		return (NULL);
+	}
+	for (unsigned int i = 0; i < size; i++)
+	{
+		a[i] = c;
+	}
+	return (a);
 }
