@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 	char *result;
 	unsigned int len1;
 	unsigned int len2;
-	unsigned int i,j;
+	unsigned int i, j;
 
 	if (!s1)
 	{
