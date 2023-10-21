@@ -16,7 +16,6 @@ char *_strdup(char *str)
 
 	if (new_str == NULL)
 	{
-		printf("Memory allocation failed!\n");
 		return (NULL);
 	}
 	strcpy(new_str, str);
