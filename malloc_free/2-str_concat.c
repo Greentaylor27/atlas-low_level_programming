@@ -12,9 +12,11 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	size_t len1 = strlen(s1);
-	size_t len2 = strlen(s2);
+	unsigned int len1 = strlen(s1);
+	unsigned int len2 = strlen(s2);
 	char *result;
+	unsigned int i;
+	unsigned int j;
 
 	if (s1 == NULL)
 	{
@@ -26,8 +28,14 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	result = (char *)malloc((len1 + len2 + 1) * sizeof(char));
-	strcpy(result, s1);
-	strcat(result, s2);
-
+	for (i = 0; i < len1; i++)
+	{
+		result[i] = s1[i];
+	}
+	for (j = 0; j < len2; j++)
+	{
+		result[i + j] = s2[j];
+	}
+	result[i + j] = '\0';
 	return (result);
 }
