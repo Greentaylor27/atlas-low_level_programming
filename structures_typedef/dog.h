@@ -9,12 +9,13 @@
  * Description: a new type that contains dog name, age and owner.
  */
 
-struct dog
+struct dog dog_t
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_t;
+};
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
