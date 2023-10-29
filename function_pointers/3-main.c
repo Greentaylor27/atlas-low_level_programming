@@ -8,9 +8,9 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char argv[])
 {
-	int num1, num2, result;
+	int val1, val2, result;
 	int (*func)(int, int);
 
 	if (argc != 4)
@@ -19,11 +19,11 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
+	val1 = atoi(argv[1]);
+	val2 = atoi(argv[3]);
 	func = get_op_func(argv[2]);
 
-	if ((argv[2] == '/' && num2 == 0) || (argv[2] == '%' && num2 == 0))
+	if ((argv[2] == '/' && val2 == 0) || (argv[2] == '%' && val2 == 0))
 	{
 		printf("Error\n");
 		return (100);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		return (99);
 	}
 
-	result = func(num1, num2);
+	result = func(val1, val2);
 	printf("%d\n", result);
 	return (0);
 }
