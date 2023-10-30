@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * print_numbers - prints a variable number of integers, seperated by a specified string
- * @seperator: the string to be printed between numbers
+ * print_numbers - prints a variable number of integers, seperated by a string
+ * @separator: the string to be printed between numbers
  * @n: the number of integer
  * @...: the variable number of intigers to be printed.
  */
