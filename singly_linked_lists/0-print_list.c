@@ -8,11 +8,11 @@
 
 size_t print_list(const size_t *h)
 {
-	struct list_t *current = head;
+	struct list_t *current = h;
 
 	while (current != NULL)
 	{
-		_putchar("%d", current->len);
+		printf("%d", current->len);
 		current = current->next;
 	}
 	return (current);
