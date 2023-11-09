@@ -8,12 +8,14 @@
 
 size_t print_list(const list_t *h)
 {
-	struct list_t *current = h;
+	const list_t *current = h;
+	size_t count = 0;
 
 	while (current != NULL)
 	{
-		printf("%d", current->len);
+		printf("%s", current->str);
 		current = current->next;
+		count++;
 	}
-	return (current);
+	return (count);
 }
