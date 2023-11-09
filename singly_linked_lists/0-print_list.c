@@ -6,7 +6,7 @@
  * Return: number of nodes
  */
 
-size_t print_list(const size_t *h)
+size_t print_list(const list_t *h)
 {
 	struct list_t *current = h;
 
