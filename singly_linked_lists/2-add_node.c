@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * add_node - adds a node to a singly linked list
