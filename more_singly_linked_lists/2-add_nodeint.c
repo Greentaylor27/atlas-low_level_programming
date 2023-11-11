@@ -12,10 +12,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	if (newNode == 0)
 	{
-		return (1);
+		return (-1);
 	}
 
-	newNode->n = strdup(n);
+	newNode->n = strdup(int);
 	newNode->next = *head;
 	*head = newNode;
 	return (newNode);
