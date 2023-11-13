@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 		if (n & (1UL << i))
 			break;
 	}
-	for (i = num - 1; i >= 0; --i)
+	for (; i >= 0; --i)
 	{
 		b = n >> i;
 		if (b & 1)
