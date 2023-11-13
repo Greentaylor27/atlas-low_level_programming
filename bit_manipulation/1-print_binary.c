@@ -10,23 +10,19 @@ void print_binary(unsigned long int n)
 {
 	int num, i;
 	unsigned long int b;
-	bool first;
 
 	if (n == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return;
 	}
 	num = sizeof(n) * 8;
-
-	first = false;
-
 	for (i = num - 1; i >= 0; --i)
 	{
-		if (b == 1)
-			first = true;
-		if (first)
-			putchar(b + '0');
+		b = n >> i;
+		if (b & 1)
+			_putchar('1');
+		else
+			_putchar('0');
 	}
 }
-
