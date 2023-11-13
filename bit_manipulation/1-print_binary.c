@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 0)
 	{
-		_putchar('0');
+		putchar('0');
 		return;
 	}
 	num = sizeof(n) * 8;
@@ -26,7 +26,7 @@ void print_binary(unsigned long int n)
 		if (b == 1)
 			first = true;
 		if (first)
-			_putchar(b + '0');
+			putchar(b + '0');
 	}
 }
 
