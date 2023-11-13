@@ -19,6 +19,7 @@ void print_binary(unsigned long int n)
 			break;
 	}
 	for (i = num - 1; i >= 0; --i)
+	{
 		b = n >> i;
 		if (b & 1)
 			_putchar('1');
