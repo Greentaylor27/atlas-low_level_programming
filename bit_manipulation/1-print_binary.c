@@ -23,8 +23,6 @@ void print_binary(unsigned long int n)
 
 	for (i = num - 1; i >= 0; --i)
 	{
-		(b == (n >> i) & 1);
-
 		if (b == 1)
 			first = true;
 		if (first)
