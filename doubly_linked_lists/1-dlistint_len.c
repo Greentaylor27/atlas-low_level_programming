@@ -6,7 +6,7 @@
 	*
 	* Return: The number of elements in a list
 	*/
-size_t dlistit_len(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int count = 0;
 	const dlistint_t *current = h;
