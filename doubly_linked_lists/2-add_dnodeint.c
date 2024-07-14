@@ -9,7 +9,7 @@
 	* Return: List with new element or NULL on fail
 */
 
-dlistint_t *add_dnode(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *NewNode = malloc(sizeof(dlistint_t));
 
