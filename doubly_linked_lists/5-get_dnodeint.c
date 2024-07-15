@@ -5,7 +5,7 @@
 	* @head: points to the head element of a linked list
 	* @index: The place you are trying to grab the data from
 	*
-	Return: The node if it exsists or NULL if it doesn't
+	* Return: The node if it exsists or NULL if it doesn't
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
