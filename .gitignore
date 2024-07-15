@@ -54,3 +54,4 @@ compose-dev.yaml
 doubly_linked_lists/.vscode/c_cpp_properties.json
 doubly_linked_lists/.vscode/launch.json
 doubly_linked_lists/.vscode/settings.json
+.vscode/c_cpp_properties.json
