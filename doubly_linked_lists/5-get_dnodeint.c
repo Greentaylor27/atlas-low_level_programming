@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-	* get_dnodeint_at_index - Pulls an element from a list given the index of the node
+	* get_dnodeint_at_index - Gets a node from a list given the index
 	* @head: points to the head element of a linked list
 	* @index: The place you are trying to grab the data from
 	*
