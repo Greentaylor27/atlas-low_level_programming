@@ -21,9 +21,12 @@ void hash_table_print(const hash_table_t *ht)
 		while (current != NULL)
 		{
 			printf("'%s': '%s'", current->key, current->value);
-			if (current->next != NULL)
+
+			if (current->next != NULL || i + 1 < ht->size) {
 				printf(", ");
+			}
 			current = current->next;
 		}
 	}
+
 }
