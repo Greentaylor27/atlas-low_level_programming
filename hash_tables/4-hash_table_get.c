@@ -10,11 +10,22 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-/** hash_node_t current;
+	hash_node_t *current;
 	int i;
-*/
-	if (ht == NULL || key == NULL || *key == '\0')
+
+	if (ht == NULL || key == NULL)
 		return (NULL);
 
+	i = key_index((unsigned char *)key, ht->size);
 
+	if (i >= ht->size)
+		return (NULL);
+
+	for (current = ht->array[i]; current != NULL; current = current->next)
+	{
+		if (strcmp(current->key, key) == 0)
+			return (current->value);
+	}
+	
+	return (NULL);
 }
